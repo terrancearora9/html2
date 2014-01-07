@@ -210,7 +210,7 @@
 	.section-title {
 		text-align:left;
 		margin:0 auto;
-		margin-bottom:25px;
+		margin-bottom:45px;
 		float:left;
 		width:100%;
 	}
@@ -377,7 +377,7 @@
 	}
 	.container .right i{
 	color:#41aed6;
-	margin:0px 5px 0px 0px;
+	margin:0px 5px 3px 0px;
 	float:left;
 	width:28px;
 	}
@@ -648,7 +648,7 @@
 
 
 
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 480px) {
 	
 
 /*  Counters  */ 
@@ -690,7 +690,7 @@
 	width:57% !important;
 	}
 	.section-title h3{
-	width:40% !important;
+	width:42% !important;
 	}
 	.container .right{
 	width:88% !important;
@@ -1288,11 +1288,11 @@
 /*Logo*/
 
 #logo {
-		background:url(./images/logo.jpg) 0 7px ;
-		background-size:120px 50px;
+		background:url(./images/logo.png) 0 -3px ;
+		background-size:200px 70px;
 		position:absolute;
-		width:120px;
-		height:50px;
+		width:200px;
+		height:70px;
 		left:30px;
 		margin-left:0;
 		z-index:100;
@@ -1378,18 +1378,19 @@
 	}
 	
 	ul.socials-icons li i.icon-facebook, ul.socials-icons li i.icon-twitter, ul.socials-icons li i.icon-linkedin, ul.socials-icons li i.icon-instagram{
-	padding:0 9px;
+	padding:0 7px;
 	color:#f7f7f7;
+	font-size:13px;
 	}
 	ul.socials-icons li {
     background: none repeat scroll 0 0 #9A9B9C;
     border-radius: 50%;
     color: #FFFFFF;
     display: inline-block;
-    height: 30px;
-    line-height: 31px;
+    height: 24px;
+    line-height: 25px;
     margin: 0 3px;
-    width: 30px;
+    width: 24px;
 }
 	
 	ul.socials-icons li a {
@@ -1645,7 +1646,7 @@
 
 
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
 	
 	.container {
 		width:400px;
@@ -1690,7 +1691,7 @@
 
 
 
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 480px) {
 	
 	.container {
 		width:280px;
