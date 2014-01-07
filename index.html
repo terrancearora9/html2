@@ -3,7 +3,7 @@
  <head>
 
      <title>Code Free</title>
-     <meta name="viewport" content="width=device-width; initial-scale=1.0">
+     <meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0">
      <meta name="description" content="Responsive One Page Parallax Template" />
      <meta name="author" content="Mycore Themes" />
      <meta charset="UTF-8" />
@@ -22,8 +22,6 @@
      <link href='../../fonts.googleapis.com/css_209a6797.css' rel='stylesheet' type='text/css' />
    
  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<!-- Original URL: http://ronantestsite.info/officeart/index.html
-Date Downloaded: 12/23/2013 11:09:29 PM !-->
 </head>
 
  <body data-spy="scroll" data-target=".navbar" data-offset="75">
@@ -38,10 +36,10 @@ Date Downloaded: 12/23/2013 11:09:29 PM !-->
 						 <span class="show-menu-bar"></span>
 					 </a>
                     
-					 <div id="logo"><a class="external" href="./index.html"></a></div>
+					 <div id="logo"><a class="external colapse-menu1" href="#team"></a></div>
 					 <div class="nav-collapse collapse">
 						 <ul class="nav">
-							 <li class="menu-1"><a class="colapse-menu1" href="#career">Career</a></li>
+							 <li class="menu-4"><a class="colapse-menu1" href="#career">Career</a></li>
 							 <li class="menu-6"><a class="colapse-menu1" href="#contact-parallax">Contact </a></li>
 						 </ul>
 					 </div>
@@ -142,11 +140,11 @@ Date Downloaded: 12/23/2013 11:09:29 PM !-->
 			 <form action="send.php" method="post">
 			 <table>
 			 <tr>
-			 <td><input onclick="this.value=''" type="text" value="Name" id="name" name="name" required="" /></td>
-			 <td><input onclick="this.value=''" type="text" value="Email" name="email" id="email" required="" /></td>
+			 <td><input type="text" value="Name" onblur="if (this.value == '') {this.value = 'Name';}" onfocus="if (this.value == 'Name') {this.value = '';}" id="name" name="name" required="" /></td>
+			 <td><input type="text" value="Email" onblur="if (this.value == '') {this.value = 'Email';}" onfocus="if (this.value == 'Email') {this.value = '';}" name="email" id="email" required="" /></td>
 			 </tr>
 			 <tr>
-			 <td colspan="2"><textarea onclick="this.value=''" name="message" placeholder="Message" value="Massage" id="message" required=""></textarea></td>
+			 <td colspan="2"><textarea name="message" onblur="if (this.value == '') {this.value = 'Massage';}" onfocus="if (this.value == 'Massage') {this.value = '';}" id="message" required="">Massage</textarea></td>
 			 </tr>
 			 <tr>
 			 <td colspan="2"><button>SEND</button></td>
@@ -155,9 +153,9 @@ Date Downloaded: 12/23/2013 11:09:29 PM !-->
 			 </form>
 			 </div>
 			 <div class="right">
-			 <i class="icon-home icon-2x"></i><p>Lorem Ipsum 75, Oslo, Norway</p><br><br>
-			 <i class="icon-mobile-phone icon-3x"></i><p>0012/ 345.678</p><br><br>
-			 <i class="icon-envelope icon-2x"></i><p><a href="mailto:freecode@gmail.com">freecode@gmail.com</a></p><br><br>
+			 <p><i class="icon-home icon-2x"></i>Lorem Ipsum 75,<br> Oslo, Norway</p><br><br>
+			 <p><i class="icon-mobile-phone icon-3x"></i>0012/ 345.678</p><br><br>
+			 <p><i class="icon-envelope icon-2x"></i><a href="mailto:freecode@gmail.com">freecode@gmail.com</a></p><br><br>
 			 <div class="spacer-30"></div>
 			  <ul class="socials-icons">
                  <li><a href="#"><i class="icon-facebook icon-1x"></i></a></li>
@@ -259,7 +257,7 @@ Date Downloaded: 12/23/2013 11:09:29 PM !-->
 <script type="text/javascript">
 $(function () {
 	var austDay = new Date();
-	austDay = new Date(austDay.getFullYear() + 1, 1 - 1, 6);
+	austDay = new Date(austDay.getFullYear() + 1, -9 - 1, 2);
 	$('#defaultCountdown').countdown({until: austDay});
 	$('#year').text(austDay.getFullYear());
 });
